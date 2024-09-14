@@ -19,7 +19,6 @@ public class CircleTests
     {
         //Arrange
         var circle = new Circle(centerX, centerY, radius);
-
         //Act
         var area = circle.Area;
 

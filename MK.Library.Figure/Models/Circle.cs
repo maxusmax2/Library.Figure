@@ -16,6 +16,17 @@ public class Circle : IFigure
         Radius = radius;
     }
 
+    public Circle(
+        Point center,
+        double radius)
+    {
+        Center = center;
+
+        if (radius < 0)
+            throw new ArgumentOutOfRangeException(nameof(radius));
+        Radius = radius;
+    }
+
     public Point Center { get; }
     public double Radius { get; }
 

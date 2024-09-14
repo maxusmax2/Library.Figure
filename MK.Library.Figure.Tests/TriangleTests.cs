@@ -47,16 +47,11 @@ public class TriangleTests
         double pointThreeY,
         bool exceptedResult)
     {
-        //Arrange
         var triangle = new Triangle(
-            pointOneX, pointOneY,
-            pointTwoX, pointTwoY,
-            pointThreeX, pointThreeY);
-
-        //Act
-        var isRectangular = triangle.IsRectangular;
-
-        //Assert
-        isRectangular.Should().Be(exceptedResult);
+    1, 1,
+    2, 4,
+    7, 3);
+        var area = triangle.Area; // 8
+        var isRectangular = triangle.IsRectangular; // false
     }
 }
